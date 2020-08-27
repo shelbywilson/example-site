@@ -1,0 +1,9 @@
+.footer {
+    @extend .layout-padded-container;
+    @extend .theme-dark;
+    background: $accent-dark;
+    text-align: right;
+    &-attributions {
+        @extend .font-small;
+    }
+}

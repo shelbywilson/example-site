@@ -1,0 +1,4 @@
+.header {
+    @extend .layout-padded-container;
+    border-bottom: 3px solid $accent-medium;
+}

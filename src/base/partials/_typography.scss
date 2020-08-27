@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+$type-primary: 'Playfair Display', serif;
+
+.font-small {
+	font-size: 0.75rem;
+}
+.font-button {
+	font-size: 1rem;
+	@include breakpoint(xs) {
+		font-size: 0.75rem;
+	}
+}
+.font-default {
+	font-size: 1rem;
+	@include breakpoint(xs) {
+		font-size: 0.8125rem;
+	}
+}
+.font-large { 
+	font-size: 1.25rem;
+	@include breakpoint(xs) {
+		font-size: 1rem;
+	}
+}
+.font-xl {
+	font-size: 1.5rem;
+	@include breakpoint(xs) {
+		font-size: 1.125rem;
+	}
+}

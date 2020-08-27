@@ -1,0 +1,32 @@
+.layout {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    
+    &, &-content {
+        flex-grow: 1;
+        overflow: auto;
+        height: -webkit-fill-available; // handle vh on iOS Safari
+        height: 100vh;
+    }
+
+    &-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        &-scroll {
+            @extend .layout-padded-container;
+            flex-grow: 1;
+            overflow: auto;
+        }
+    }
+
+    &-padded-container {
+        padding: 1rem 1.5rem;
+
+        @include breakpoint(xs) {
+            padding: 0.625rem;
+        }
+    }
+}

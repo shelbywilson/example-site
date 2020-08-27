@@ -1,0 +1,17 @@
+.theme-light {
+	h1, h2, h3, h4, h5, h6, p, button {
+		color: $type-primary-color;
+    }
+    a {
+        color: $accent-dark;
+    }
+}
+
+.theme-dark {
+	h1, h2, h3, h4, h5, h6, p, button {
+		color: $accent-light;
+    }
+    a {
+        color: $accent-bright;
+    }
+}

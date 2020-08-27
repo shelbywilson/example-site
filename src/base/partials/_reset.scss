@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	font-size: 16px;
+	@extend .theme-light;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button {
+	font-family: $type-primary;
+	font-weight: 400;
+}
+
+h1 {
+	@extend .font-xl;
+	margin: 0;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
+h2 {
+	@extend .font-large;
+	margin: 0;
+	text-align: center;
+}
+
+p {
+	@extend .font-default;
+	line-height: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+	&:hover, &:focus {
+		border-bottom: 1px solid;
+	}
+}
+
+button {
+	border: none;
+	background: $accent-white;
+}
