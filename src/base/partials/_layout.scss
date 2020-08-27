@@ -6,8 +6,9 @@
     &, &-content {
         flex-grow: 1;
         overflow: auto;
-        height: -webkit-fill-available; // handle vh on iOS Safari
         height: 100vh;
+        /* mobile viewport bug fix */
+        height: -webkit-fill-available;
     }
 
     &-content {
