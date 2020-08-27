@@ -17,6 +17,10 @@
                 path {
                     fill: $accent-dark;
                 }
+                @include breakpoint(xs) {
+                    width: 4rem;
+                    margin: 0 0.5rem;
+                }
             }
         }
     }
